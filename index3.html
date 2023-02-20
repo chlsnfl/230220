@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box img{
+        width: 400px;
+        height: 300px;
+        object-fit: cover;  /*기본값은 fill contain은 모두 나오는데 줄여져서 나오고 cover는 사이즈에 맞게 짤림*/
+        object-position: 80% 100%;
+    }
+    /* button{
+        font-size: 20px;
+        padding: 8px 20px;
+    }
+    button:hover{
+        background: lightblue;
+        border: 1px dashed #000;
+    }
+    button:active{
+        background: yellowgreen;
+    }
+     */
+    /* button{
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    button:hover{
+        text-decoration: underline;
+    } */
+    a{
+        padding: 6px;
+        background: #f0ebeb;
+        color: #000;
+        font-size: 10px;
+        border: 1px solid #000;
+        text-decoration: none;
+        border-radius: 3px;
+        cursor :context-menu;
+    }
+    a:hover{
+        background: #cac7c7;
+        border: 1px solid #000;
+    }
+    
+</style>
+<body>
+    <div class="box">
+    <img src = "../230216/img/001.gif" alt="뿡">
+    </div>
+
+    <button>버튼</button>
+    <a href="http://naver.com" target="_blank">네이버</a>
+    <button>버튼</button>
+
+</body>
+</html>

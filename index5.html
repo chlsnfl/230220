@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: block;
+        border: 2px solid#ccc;
+        color: #ccc;
+        padding: 8px;
+        margin: 20px;
+    }
+
+</style>
+<script src="../js/jquery-1.12.4.min.js"></script>  
+<script>
+    $(function(){
+        /*
+        siblings()
+        next()
+        nextAll()
+        nextUntil()
+
+        prev()
+        prevAll()
+        pervUntil()
+
+        (first-child last child - 가상요소)
+        first(), last(), box()
+
+
+
+        */
+        // $('h2').nextAll("h3").css({"color" : "red", "border":"2px solid red" })
+        $('div').not(".box").css("backgroud-color",  "yellow");
+    });//jquery
+</script>
+<body>
+    <div> 
+        박스1
+    </div>
+    <div class="box">
+        박스2
+    </div>
+    <div>
+        박스3
+    </div>
+    <div>
+        박스4
+    </div>
+</div>
+</body>
+</html>

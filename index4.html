@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        width: 1200px;
+        background: #fefefe;
+        padding: 50px;
+        border: 2px solid #ddd;
+        color: lightgray;
+        margin: 15px auto;
+    }
+    .container>div{
+        width: 500px;
+        margin: auto;
+    }
+
+</style>
+<script src="../js/jquery-1.12.4.min.js"></script>  
+<script>
+    $(function(){
+        //parent()=>부모 ,parents()=>조상 ,parentsUntil()=>조상 중 어디까지
+        $('sapn').parentsUntil("div").css({
+            "color" : "red",
+            "border" : "2px solid red"
+        });
+    });//jquery
+</script>
+<body>
+    <div class="container">
+    <div>div
+        <ul>ul
+            <li>li
+                <span>span</span>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <p>
+            <span>span</span>
+        </p>
+    </div>
+</div>
+</body>
+</html>

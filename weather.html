@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style></style>
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+            jQuery.ajax({
+                url :"https://api.openweathermap.org/data/2.5/weather",
+                data : {
+                    lat : 37.6446455,
+                    lon : 126.6670966,
+                    appid : "5407d5f220008054058bd8b9b2935e04",
+                    units : "metric",   
+                    lang : "KR"
+
+                },
+                dataType : "JSON",
+                success:function(data){
+                    console.log(data);
+                    $("#cityname").html(data.name);
+                },
+                error : function(xhr, status, error){
+                    alert("에러");
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1 id = "cityname">
+        <p class = "temp"></p>
+        <p class = "icon"></p>
+        <p class = "desc"></p>
+    </h1>
+</body>
+</html>

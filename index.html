@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .box{
+            margin-top: 100px;
+        }
+        .tooltip{
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dashed #333;
+        }
+        .tooltiptext{
+            position: absolute;
+            width: 120px;
+            background: #000;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            display: none;
+            z-index: 1;
+            bottom: 120%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .tooltiptext::after{
+            content: " ";
+            display: inline-block;
+            position: absolute;
+            border-width: 5px;
+            top : 30px;
+            left:calc( 50% - 2.5px);
+            border-style: solid;
+            border-color: #000  transparent transparent transparent;
+        }
+  
+        .tooltip:hover .tooltiptext{
+            display:inline-block;
+        }
+        .tooltiptext1{
+            position: absolute;
+            width: 120px;
+            background: #000;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            display: none;
+            z-index: 1;
+            left: -150px;
+        }
+
+        .tooltiptext1::after{
+            content: "";
+            display: inline-block;
+            position: absolute;
+            border-width: 5px;
+            top : 10px;
+            left:calc( 75% - 2.5px) ;
+            border-style: solid;
+            border-color: transparent transparent transparent #000;
+        }
+  
+        .tooltip:hover .tooltiptext1{
+            display:inline-block;
+        }        
+
+        .tooltiptext2{
+            position: absolute;
+            width: 120px;
+            background: #000;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            display: none;
+            z-index: 1;
+            left: 210px;
+        }
+
+        .tooltiptext2::after{
+            content: "";
+            display: inline-block;
+            position: absolute;
+            border-width: 5px;
+            top : 10px;
+            left:calc( 50% - 2.5px) -10px ;
+            border-style: solid;
+            border-color: transparent transparent #000 transparent;
+        }
+  
+        .tooltip:hover .tooltiptext2{
+            display:inline-block;
+        }
+
+        .tooltiptext3{
+            position: absolute;
+            width: 120px;
+            background: #000;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            display: none;
+            z-index: 1;
+            left: -150px;
+        }
+
+        .tooltiptext3::after{
+            content: "";
+            display: inline-block;
+            position: absolute;
+            border-width: 5px;
+            top : 10px;
+            left:calc(5% - 2.5px) ;
+            border-style: solid;
+            border-color: transparent #000 transparent transparent;
+        }
+  
+        .tooltip:hover .tooltiptext3{
+            display:inline-block;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class = "box">
+    <div class = "tooltip">
+        여기에 마우스를 올리세요.
+        <span class="tooltiptext">
+            툴팁입니다.
+        </span>
+        <div class="tooltiptext1">튜튜튜</div>
+        <div class="tooltiptext2">튜튜튜</div>
+        <div class="tooltiptext3">튜튜튜</div>
+    </div>
+</div>
+</body>
+</html>

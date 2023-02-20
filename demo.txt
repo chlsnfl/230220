@@ -1,0 +1,3 @@
+<p id="box1">Welcome,Jquery Ajax!!</p>
+<p id="box2">Welcome,Jquery Ajax!!</p>
+<p id="box3">Welcome,Jquery Ajax!!</p>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+
+    </style>
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+            /*
+                $(선택자).load('파일명');
+                $(선택자).get('주소, 정보')//파라미터창으로 정보를 보내고 주소에서 정보를 받아 옴
+                $(선택자).post('주소, 정보')
+                $(선택자).ajax('주소', 정보)
+            */
+           $('button').click(function(){
+                $('#viewbox').load('demo.txt #box1');
+           });
+        });
+    </script>
+<body>
+    <div id ="viewbox"></div>
+    <button>GET AJAK</button>
+</body>
+</html>
